@@ -19,20 +19,6 @@ app.listen(port, () => {
     console.log("Server is running in port ", port);
 });
 
-const bcrypt = require('bcryptjs');
-const myfunction = async () => {
-    const pass = "Ashish!@#$766";
-
-    const hashedpass = await bcrypt.hash(pass, 8);
-    const isMatch = await bcrypt.compare("Ashish!@", hashedpass);
-    (console.log(chalk.white(isMatch)));
-    console.log(chalk.blue(pass), "Hashed", chalk.red(hashedpass));
-
-
-}
-
-myfunction()
-
 
 
 //https://www.getpostman.com/collections/ce82a60acd7851813f07
